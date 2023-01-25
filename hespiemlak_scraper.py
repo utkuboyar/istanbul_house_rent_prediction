@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import _pickle
 import time
-#cengiz github push check
+
 class HepsiemlakScraper(object):
     
     def __init__(self, config_file_name):
