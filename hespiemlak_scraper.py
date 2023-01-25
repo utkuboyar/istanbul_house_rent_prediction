@@ -15,11 +15,11 @@ class HepsiemlakScraper(object):
         
         
     def export(self, config_file_name):
-            config = {'advertisements':self.advertisements,
-                      'page_index':{'start':self.page_index_start,
-                                    'end':self.page_index_end}}
-            with open(config_file_name, 'wb') as f:
-                _pickle.dump(config, f)
+        config = {'advertisements':self.advertisements,
+                  'page_index':{'start':self.page_index_start,
+                                'end':self.page_index_end}}
+        with open(config_file_name, 'wb') as f:
+            _pickle.dump(config, f)
     
     
     def run(self):
