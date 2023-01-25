@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import _pickle
 import time
-
+#cengiz github push check
 class HepsiemlakScraper(object):
     
     def __init__(self, config_file_name):
@@ -41,7 +41,7 @@ class HepsiemlakScraper(object):
                 ul = soup.find('ul', class_='list-items-container')
 
                 link_lis = ul.findAll('li')
-
+ 
                 for link_li in link_lis:
 
                     adv = link_li.find('div', class_='list-view-img-wrapper')
